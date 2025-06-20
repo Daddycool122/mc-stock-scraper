@@ -23,6 +23,4 @@ jobs:
       - name: Run scraper
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-        run: |
-          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
-          node scrapeMoneyControl.js
+        run: node scrapeMoneyControl.js
