@@ -64,7 +64,7 @@ async function writeToGoogleSheet(data) {
   const client = await auth.getClient();
   const sheets = google.sheets({ version: 'v4', auth: client });
 
-  const spreadsheetId = 'YOUR_SHEET_ID_HERE'; // from the URL
+  const spreadsheetId = '1DOuXet9OQzcbXwqEVTgyP9IrXwZc1qfXDeouZawR6kQ'; // from the URL
   const sheetName = 'Sheet1';
 
   const rows = data.map(entry => [
